@@ -1,0 +1,11 @@
+<div *ngIf="ehPaginaLogin(); else mainTemplate">
+  <router-outlet></router-outlet>
+</div>
+<ng-template #mainTemplate>
+  <div class="d-flex">
+    <app-barra-lateral></app-barra-lateral>
+    <div class="flex-grow-1">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</ng-template>

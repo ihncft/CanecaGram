@@ -1,0 +1,77 @@
+{
+  "usuarios": [
+    {
+      "id": "0",
+      "usuario": "junior",
+      "senha": "senhaForte",
+      "nome": "Junior Almeida",
+      "email": "junior@gmail.com",
+      "bio": "Apenas o Junior"
+    },
+    {
+      "id": "1",
+      "usuario": "arthur",
+      "senha": "senhaPotente",
+      "nome": "Arthur Cardoso",
+      "email": "arthur@gmail.com",
+      "bio": "O segundo usuário"
+    },
+    {
+      "id": "d4b4",
+      "usuario": "leandro",
+      "senha": "senhaMassa"
+    },
+    {
+      "id": "596d",
+      "usuario": "torres",
+      "senha": "senhaSemCriatividade",
+      "nome": "Torres",
+      "email": "torres@gmail.com",
+      "bio": "Apenas torres"
+    }
+  ],
+  "mensagens": [
+    {
+      "from": "junior",
+      "to": "arthur",
+      "content": "Bom dia meu nobre!",
+      "timestamp": "2024-11-03T12:00:00Z",
+      "id": "8172"
+    },
+    {
+      "id": "27bf",
+      "from": "junior",
+      "to": "arthur",
+      "content": "Tranquilo meu bom?"
+    },
+    {
+      "id": "c736",
+      "from": "junior",
+      "to": "arthur",
+      "content": "Só testando meu bom",
+      "timestamp": "2024-11-03T14:29:01.144Z"
+    },
+    {
+      "id": "ce43",
+      "from": "junior",
+      "to": "salve",
+      "content": "Eae meu bom",
+      "timestamp": "03/11/2024, 11:32"
+    },
+    {
+      "id": "9794",
+      "from": "torres",
+      "to": "pedro",
+      "content": "isso funciona",
+      "timestamp": "25/11/2024, 20:51"
+    }
+  ],
+  "posts": [
+    {
+      "id": "02c6",
+      "idUsuario": "0",
+      "titulo": "Por Favor",
+      "imagem": "http://localhost:3001/public/assets/canecaMassa.jpg"
+    }
+  ]
+}

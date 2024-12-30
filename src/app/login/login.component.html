@@ -1,0 +1,40 @@
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-4">
+      <h2>Login</h2>
+      <form (submit)="onLogin()">
+        <div class="form-group">
+          <label for="username">Username:</label>
+          <input
+            type="text"
+            id="username"
+            [(ngModel)]="usuario"
+            name="username"
+            class="form-control"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+            [(ngModel)]="senha"
+            name="password"
+            class="form-control"
+            required
+          />
+        </div>
+        <button type="submit" class="btn btn-primary btn-block mt-3">
+          Login
+        </button>
+      </form>
+      <p *ngIf="mensagemErro" class="text-danger">{{ mensagemErro }}</p>
+      <div class="text-center mt-3">
+        <button class="btn btn-secondary" (click)="irParaCadastro()">
+          Criar Conta
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

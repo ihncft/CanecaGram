@@ -1,0 +1,19 @@
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6 text-center">
+      <h2>Perfil do Usuário</h2>
+      <p><strong>Nome:</strong> {{ perfilDoUsuario?.nome }}</p>
+      <p><strong>Email:</strong> {{ perfilDoUsuario?.email }}</p>
+      <p><strong>Bio:</strong> {{ perfilDoUsuario?.bio }}</p>
+    </div>
+  </div>
+  <div class="row justify-content-center mt-4">
+    <div class="col-md-6 text-center">
+      <h3>Postagens</h3>
+      <div class="mb-4" *ngFor="let post of postagensUsuario">
+        <h4>{{ post.titulo }}</h4>
+        <img [src]="post.imagem" alt="Post Image" class="img-fluid"/>
+      </div>
+    </div>
+  </div>
+</div>

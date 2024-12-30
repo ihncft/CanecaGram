@@ -1,0 +1,28 @@
+<div class="sidebar bg-dark d-flex flex-column justify-content-between p-3">
+  <div class="sidebar-header">
+    <h2 class="text-white">CanecaGram</h2>
+  </div>
+  <ul class="nav flex-column nav-links">
+    <li class="nav-item">
+      <a class="nav-link text-white" routerLink="/inicio">Início</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-white" routerLink="/perfil">Perfil</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-white" routerLink="/criar-post">Postar</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-white" routerLink="/mensagens">Mensagens</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-white" routerLink="/configuracao"
+        >Configurações</a
+      >
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" (click)="onLogout()" href="#">Logout</a>
+    </li>
+  </ul>
+  <div class="sidebar-image"></div>
+</div>

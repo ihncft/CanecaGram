@@ -1,0 +1,17 @@
+.container {
+  margin-top: 20px;
+}
+
+.row {
+  justify-content: center;
+}
+
+.col-md-6 {
+  max-width: 600px;
+}
+
+:host {
+  display: block;
+  margin-left: 250px;
+  padding: 20px;
+}

@@ -1,0 +1,14 @@
+<div class="container mt-5">
+  <h2>Mensagens</h2>
+  <ul class="list-group">
+    <li *ngFor="let message of mensagens" class="list-group-item">
+      <strong>{{ message.from }} para {{ message.to }}:</strong> {{ message.content }}
+      <br><small>{{ message.timestamp }}</small>
+  </ul>
+  <div class="mt-3">
+    <input #newMessage class="form-control" placeholder="Nova mensagem">
+    <input #toUser class="form-control mt-2" placeholder="Destinatário">
+    <button class="btn btn-primary mt-3 me-3" (click)="adicionarMensagem(newMessage.value, toUser.value); newMessage.value=''; toUser.value=''">Enviar</button>
+    <button class="btn btn-secondary mt-3" (click)="limparMensagens()">Limpar</button>
+  </div>
+</div>

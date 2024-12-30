@@ -1,0 +1,15 @@
+<div class="home-content">
+    <div class="home-header d-flex justify-content-between align-items-center bg-dark text-white p-3">
+        <h2>Bem-vindo, {{usuarioLogado?.usuario}}</h2>
+        <button class="btn btn-secondary" (click)="onLogout()">Sair</button>
+    </div>
+
+    <div class="feed">
+        <div class="card mb-3" *ngFor="let post of posts">
+            <div class="card-body">
+                <h3 class="card-title">{{ post.titulo }}</h3>
+                <img [src]="post.imagem" alt="Imagem do Post">
+            </div>
+        </div>
+    </div>
+</div>

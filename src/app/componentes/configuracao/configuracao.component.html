@@ -1,0 +1,53 @@
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <h2>Configurações</h2>
+      <div>
+        <h4>Modo Escuro</h4>
+        <button class="btn btn-primary btn-block mt-2" (click)="alterarModoEscuro()">
+          {{ modoEscuroAtivado ? 'Desativar Modo Escuro' : 'Ativar Modo Escuro' }}
+        </button>
+      </div>
+
+      <div class="mt-4">
+        <h4>Mudar Senha</h4>
+        <form (ngSubmit)="mudarSenha()">
+          <div class="form-group">
+            <label for="novaSenha">Nova Senha:</label>
+            <input
+              type="password"
+              id="novaSenha"
+              [(ngModel)]="novaSenha"
+              name="novaSenha"
+              class="form-control"
+              required
+            />
+          </div>
+          <button type="submit" class="btn btn-success btn-block mt-2">
+            Alterar Senha
+          </button>
+        </form>
+      </div>
+
+      <div class="mt-4">
+        <h4>Mudar Usuário</h4>
+        <form (ngSubmit)="mudarUsuario()">
+          <div class="form-group">
+            <label for="novoUsuario">Novo Usuário:</label>
+            <input
+              type="text"
+              id="novoUsuario"
+              [(ngModel)]="novoUsuario"
+              name="novoUsuario"
+              class="form-control"
+              required
+            />
+          </div>
+          <button type="submit" class="btn btn-success btn-block mt-2">
+            Alterar Usuário
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
